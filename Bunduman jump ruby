@@ -1,0 +1,9 @@
+s,o=gets.split
+a=gets.split.map(&:to_i).sort
+a=a.reverse if'A'==o
+t=[]
+x=s=='R'
+(t.unshift(a.pop()) if x==true
+t.push(a.pop()) if x==false
+x=!x)while a.size>0
+puts t*" "
